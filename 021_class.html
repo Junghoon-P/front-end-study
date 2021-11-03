@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css class</title>
+    <style>
+      .one {
+        color: royalblue;
+      }
+
+      .two {
+        color: salmon;
+      }
+
+      .three {
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1. class는 중첩에서 사용할 수 있다. 반면 id는 중첩해서 사용할 수 없다.
+    2. page내 class는 여러개 존재해도 됩니다. 반면 ID는 유일해야 한다.
+
+    1. 속성 값 뒤에 `!important` 를 붙인 속성
+    2. `HTML`에서 `[style]`을 직접 지정한 속성
+    3. `#id` 로 지정한 속성
+    4. `.클래스`, `:추상클래스` 로 지정한 속성
+    5. `태그이름` 으로 지정한 속성
+    6. 상위 객체에 의해 상속된 속성
+
+    같은 우선 순위에 있는 경우, 부모-자식 관계가 많은 경우가 우선되며, 모든 설정이 같은 경우 **나중**에 선언한 것이 우선되어 적용됩니다. -->
+    <h1 class="one">hello world</h1>
+    <h1 class="two">hello world</h1>
+    <h1 class="two three">hello world</h1>
+    <h1>hello world</h1>
+    <h1>hello world</h1>
+  </body>
+</html>

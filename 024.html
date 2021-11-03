@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>인접 형제 선택자</title>
+    <style>
+      /* 일반 형제 선택자는 선택자 사이에 `~` 를 사용하여 나타냅니다. `~` 을 기준으로 앞 요소 이후에 나오는 모든 뒤 요소를 선택합니다. 실습은 위와 같은 예제를 사용해주세요. */
+      h1 + ul {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>hello world</h1>
+    <ul>
+      <li>hello</li>
+      <li>hello</li>
+      <li>hello</li>
+      <li>hello</li>
+    </ul>
+    <ul>
+      <li>hello</li>
+      <li>hello</li>
+      <li>hello</li>
+      <li>hello</li>
+    </ul>
+  </body>
+</html>
