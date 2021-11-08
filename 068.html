@@ -9,15 +9,20 @@
     <style>
       body {
         font-size: 12px;
-        box-sizing: border-box;
       }
+
 
       article {
         width: 350px;
         height: 145px;
+        margin: 50px 50px;
         border-radius: 10px;
         background: #f7f9fa;
-        justify-content: center;
+      }
+
+      .container {
+        padding-top: 25px;
+        padding-left: 15px;
       }
 
       a {
@@ -67,20 +72,27 @@
     </style>
   </head>
   <body>
-    <article>
-      <p>네이버를 더 안전하고 편리하게 이용하세요.</p>
-        <a
-        href="https://nid.naver.com/nidlogin.login?mode=form&amp;url=https%3A%2F%2Fwww.naver.com"
-        class="link_login"
-        ><img src="./images/title.png"></img
-        >로그인</a>
-      <section class="icon">
-        <div clss="wrapper">
-          <span><img src="./images/lock.png" alt="lock" />아이디</span>
-          <span>· 비밀번호 찾기</span>
+      <article>
+        <div class="container">
+          <p>네이버를 더 안전하고 편리하게 이용하세요.</p>
+            <a
+            href="https://nid.naver.com/nidlogin.login?mode=form&amp;url=https%3A%2F%2Fwww.naver.com"
+            class="link_login"
+            ><img src="./images/title.png"></img
+            >로그인</a>
+          <section class="icon">
+            <div clss="wrapper">
+              <span><img src="./images/lock.png" alt="lock" />아이디</span>
+              <span>· 비밀번호 찾기</span>
+            </div>
+            <p><img src="./images/user.png" alt="user" />회원가입</p>
+    
+            <!-- <ul clss="wrapper">
+              <li><img src="./images/lock.png" alt="lock" />아이디· 비밀번호 찾기</li>
+              <li><img src="./images/user.png" alt="user" />회원가입a</li>
+            </ul> -->
+          </section>
         </div>
-        <p><img src="./images/user.png" alt="user" />회원가입</p>
-      </section>
-    </article>
+      </article>
   </body>
 </html>
