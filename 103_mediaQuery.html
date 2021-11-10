@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미디어 쿼리</title>
+    <style>
+      body {
+        background-color: rgb(67, 197, 184);
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        box-sizing: border-box;
+        border: 10px solid rgb(74, 74, 180);
+        height: 800px;
+        width: 100%;
+        background-color: rgb(255, 255, 205);
+      }
+
+      .item {
+        margin: 50px;
+        width: 800px;
+        background-color: rgb(151, 89, 60);
+      }
+
+      @media screen and (max-width: 1000px) {
+        body {
+          background-color: wheat;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        body {
+          background-color: whitesmoke;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
+        animi ad temporibus fugiat repellat, neque ipsum assumenda et optio ab!
+        Quasi cum maxime magnam, obcaecati minima animi ad vitae sint! Vitae
+        quas excepturi perspiciatis repellat quo! Esse earum eligendi minima
+        voluptatibus, dolorum consectetur ut error, placeat eveniet officia,
+        alias harum quo iusto numquam rerum? Aliquam illum nemo laborum
+        recusandae magni!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
+        animi ad temporibus fugiat repellat, neque ipsum assumenda et optio ab!
+        Quasi cum maxime magnam, obcaecati minima animi ad vitae sint! Vitae
+        quas excepturi perspiciatis repellat quo! Esse earum eligendi minima
+        voluptatibus, dolorum consectetur ut error, placeat eveniet officia,
+        alias harum quo iusto numquam rerum? Aliquam illum nemo laborum
+        recusandae magni!
+      </div>
+    </div>
+  </body>
+</html>

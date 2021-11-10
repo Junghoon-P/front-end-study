@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform Transition Quiz</title>
+    <style>
+      .btnHam {
+        display: block;
+        width: 80%;
+        height: 80%;
+        margin: 0 auto;
+        border: 10px solid green;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .btnHam span {
+        display: block;
+        width: 50%;
+        height: 2px;
+        border: 3px solid salmon;
+        margin: 200px auto;
+      }
+
+      /* Quiz 1 */
+      /* .btnHam:hover .b {
+        width: 30%;
+      } */
+
+      /* Quiz 2 */
+      /* .btnHam:hover .a ~ span {
+        width: 30%;
+      } */
+
+      /* Quiz 3 */
+      .btnHam:hover .a {
+        rotate: 45deg;
+        /* transform: rotateX(60deg); */
+      }
+
+      .btnHam:hover .b {
+        opacity: 0;
+      }
+
+      .btnHam:hover .c {
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#" class="btnHam">
+      <span class="a"></span><span class="b"></span><span class="c"></span
+    ></a>
+  </body>
+</html>
