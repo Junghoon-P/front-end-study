@@ -1,0 +1,243 @@
+@charset "utf-8";
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+body {
+  background-color: rgb(239, 240, 239);
+}
+
+#app {
+  position: absolute;
+  width: 520px;
+  height: 712px;
+  top: 50%;
+  left: 50%;
+  border: 1px solid #19ca72e8;
+  border-radius: 10px;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+/* .btn-input {
+  position: absolute;
+  width: 472px;
+  height: 50px;
+  border-radius: 5px;
+} */
+
+.title-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #767676;
+}
+
+.title {
+  position: relative;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  position: relative;
+  display: inline-block;
+  color: #000;
+}
+
+.title-wrapper .title::after {
+  position: absolute;
+  display: inline-block;
+  content: "\00d7";
+  right: -148px;
+  font-size: 18px;
+  font-weight: 200;
+  color: #767676;
+}
+
+/* 왜 이것만 flex가 안먹지? */
+.content-input {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-input .text-comment {
+  display: block;
+  padding: 26px 0 24px 24px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.content-input .id-input,
+.content-input .pw-input {
+  box-sizing: border-box;
+  width: 472px;
+  height: 50px;
+  margin: 0 auto 10px;
+  padding-left: 16px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.content-input .pw-input {
+  margin-bottom: 17px;
+}
+
+.content-input .login-status {
+  display: flex;
+  align-items: center;
+  width: 472px;
+  margin-bottom: 21px;
+}
+
+.content-input .login-status img {
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+}
+
+.content-input .login-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-btn {
+  align-items: center;
+  width: 472px;
+  height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #19ca72e8;
+}
+
+.login-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.login-link .create-account {
+  color: #767676;
+  text-decoration: none;
+  margin-right: 24px;
+}
+
+.login-link .find-id-pw {
+  color: #767676;
+  text-decoration: none;
+}
+
+.login-link .create-account::after {
+  position: absolute;
+  display: inline-block;
+  content: "|";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  margin-left: 12px;
+  color: #767676;
+}
+
+.social-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-login .borderline {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #767676;
+}
+
+.social-login-btn > button {
+  display: block;
+  align-items: center;
+  width: 472px;
+  height: 50px;
+  margin-bottom: 10px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #767676;
+  background-color: #fff;
+}
+
+.social-login-btn .google-login-btn {
+  position: relative;
+  border: 1px solid #767676;
+}
+
+.social-login-btn .google-login-btn::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 28px;
+  height: 28px;
+  top: 11px;
+  left: 12px;
+  background-image: url("../images/Google__G__Logo\ 1.png");
+}
+
+.social-login-btn .facebook-login-btn {
+  border: 1px solid #2d9cdb;
+}
+
+.social-login-btn .facebook-login-btn::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 30px;
+  height: 30pxpx;
+  top: 11px;
+  left: 12px;
+  background-image: url("../images/facebook.png");
+}
+
+.social-login-btn .naver-login-btn {
+  border: 1px solid #00bf18;
+}
+
+/* .social-login-btn .naver-login-btn::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 28px;
+  height: 28px;
+  top: 11px;
+  left: 12px;
+  background-image: url("../images/naver-logo.png");
+} */
+
+.social-login-btn .kakao-login-btn {
+  border: 1px solid #f2c94c;
+}
+
+/* .social-login-btn .kakao-login-btn::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 28px;
+  height: 28px;
+  top: 11px;
+  left: 12px;
+  background-image: url("../images/message-circle.png");
+} */
