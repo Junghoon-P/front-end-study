@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex-1</title>
+    <style>
+      .container-color {
+        height: 300px;
+        margin: 5px;
+        padding: 5px;
+        border: solid 3px black;
+        border-radius: 10px;
+        background-color: cornsilk;
+      }
+
+      .item-color {
+        margin: 5px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 3px black;
+        background-color: darkcyan;
+      }
+
+      .container1 {
+        display: flex;
+        flex-direction: column;
+        /* flex-direction: row; */
+      }
+
+      .item:nth-child(2) {
+        /* widt를 조절했을 경우 UI가 깨짐 */
+        /* width: 400px; */
+        flex-basis: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>display: flex-basis</h1>
+    <div class="container-color container1">
+      <div class="item-color item">Lorem.</div>
+      <div class="item-color item">Lorem, ipsum.</div>
+      <div class="item-color item">Lorem, ipsum dolor.</div>
+      <div class="item-color item">Lorem ipsum dolor sit.</div>
+    </div>
+  </body>
+</html>

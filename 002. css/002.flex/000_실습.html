@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layout 실습</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+        line-height: 100px;
+        color: white;
+        font-weight: 700;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        width: 800px;
+        background-color: rgba(255, 99, 71, 0.897);
+      }
+
+      .wrapper-main {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 700;
+        color: white;
+        font-size: 20px;
+      }
+
+      .wrapper-section {
+        height: 600px;
+        width: 500px;
+        background-color: rgb(162, 235, 119);
+        /* border: 3px solid black; */
+      }
+
+      .wrapper-aside {
+        width: 300px;
+        background-color: rgb(228, 219, 98);
+        /* border: 3px solid black; */
+      }
+
+      .wrapper-footer {
+        height: 100px;
+        width: 800px;
+        font-size: 20px;
+        color: white;
+        font-weight: 700;
+        background-color: rgba(139, 0, 139, 0.829);
+        /* border: 3px solid black; */
+      }
+
+      @media screen and (max-width: 1086px) {
+      }
+
+      @media screen and (max-width: 1110px) {
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <ul class="container-color container">
+        <li class="item-color logo">LOGO</li>
+        <li class="item-color item">ABOUT ME</li>
+        <li class="item-color item">SKILL</li>
+        <li class="item-color item">PORTFOLIO</li>
+        <li class="item-color item">CONTACT</li>
+      </ul>
+    </header>
+    <main class="wrapper-main">
+      <section class="wrapper-section">
+        <article>SECTION</article>
+      </section>
+      <aside class="wrapper-aside">ASIDE</aside>
+    </main>
+    <footer class="wrapper-footer">FOOTER</footer>
+  </body>
+</html>
