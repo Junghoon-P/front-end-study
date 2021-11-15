@@ -4,20 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>custom page</title>
+    <title>shape dividers</title>
     <style>
-      .custom-shape-divider-top-1636529690 {
+      body {
+        margin: 0;
+      }
+      .custom-shape-divider-bottom-1636529534 {
         position: absolute;
-        top: 0;
+        bottom: 0;
         left: 0;
         width: 100%;
         overflow: hidden;
         line-height: 0;
+        transform: rotate(180deg);
+      }
+
+      .custom-shape-divider-bottom-1636529534 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 180px;
+      }
+
+      .custom-shape-divider-bottom-1636529534 .shape-fill {
+        fill: tomato;
+      }
+      .container {
+        margin-top: 970px;
+        width: 100%;
+        height: 1000px;
+        background-color: tomato;
       }
     </style>
   </head>
   <body>
-    <div class="custom-shape-divider-top-1636529690">
+    <div class="custom-shape-divider-bottom-1636529534">
       <svg
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
@@ -30,5 +51,6 @@
         ></path>
       </svg>
     </div>
+    <div class="container"></div>
   </body>
 </html>
