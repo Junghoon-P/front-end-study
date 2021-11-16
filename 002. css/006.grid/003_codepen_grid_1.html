@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>codepen-clone-1</title>
+    <style>
+      body {
+        display: flex;
+      }
+
+      header {
+        flex: 1;
+      }
+
+      .section-board {
+        display: grid;
+        flex: 1;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        background-color: rgb(255, 251, 244);
+        transform: rotateX(60deg) rotateY(-10deg) rotateZ(50deg);
+      }
+
+      .board-item {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        transition: all 0.3s;
+      }
+
+      .board-item:hover {
+        cursor: pointer;
+        transform: translate(10px, -10px);
+      }
+
+      .board-item::after {
+        position: absolute;
+        content: "";
+        width: 100px;
+        height: 100px;
+        top: 10px;
+        left: 10px;
+        z-index: -1;
+        background-color: #333;
+      }
+
+      .board-item:nth-child(3n) {
+        background-color: cadetblue;
+      }
+
+      .board-item:nth-child(3n-1) {
+        background-color: yellowgreen;
+      }
+
+      .board-item:nth-child(3n-2) {
+        background-color: rgb(205, 120, 50);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>codepen 실습</h1>
+    </header>
+    <section class="section-board">
+      <div class="board-item"></div>
+      <div class="board-item"></div>
+      <div class="board-item"></div>
+      <div class="board-item"></div>
+      <div class="board-item"></div>
+      <div class="board-item"></div>
+      <div class="board-item"></div>
+      <div class="board-item"></div>
+      <div class="board-item"></div>
+      <div class="board-item"></div>
+      <div class="board-item"></div>
+      <div class="board-item"></div>
+      <div class="board-item"></div>
+      <div class="board-item"></div>
+      <div class="board-item"></div>
+      <div class="board-item"></div>
+    </section>
+  </body>
+</html>
