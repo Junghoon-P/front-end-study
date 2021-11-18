@@ -1,0 +1,99 @@
+@keyframes object-rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(1turn);
+  }
+}
+
+@keyframes object-rotate-1 {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(-1turn);
+  }
+}
+
+@keyframes scene-rotate {
+  0% {
+    transform: rotateX(0) rotateZ(0);
+  }
+  100% {
+    transform: rotateX(30deg) rotateZ(-20deg);
+  }
+}
+
+body {
+  width: 100vh;
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-color: rgb(26, 25, 25);
+}
+
+.scene {
+  transform-style: preserve-3d;
+  /* 나중에 회전 */
+  animation: scene-rotate 10s linear infinite alternate;
+}
+
+.circle {
+  font-size: 150px;
+  font-weight: 800;
+  color: white;
+  /* 나중에 작성 */
+  animation: object-rotate 10s linear infinite;
+  transform-style: preserve-3d;
+}
+.circle .word {
+  transform-style: preserve-3d;
+}
+.circle span {
+  /* background-color: goldenrod; */
+  position: absolute;
+  transform: rotateY(calc(var(--char-index) * 17deg)) translateZ(1500px);
+}
+
+.planet {
+  position: absolute;
+  top: -400px;
+  left: -400px;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(
+    circle,
+    rgb(67, 219, 92),
+    rgb(127, 127, 243),
+    violet
+  );
+  box-shadow: 0px 0px 100px rgb(165, 163, 163);
+  border-radius: 50%;
+}
+
+.circle-rotate {
+  font-size: 150px;
+  font-weight: 800;
+  color: rgb(210, 221, 47);
+  /* 나중에 작성 */
+  animation: object-rotate-1 10s linear infinite;
+  transform-style: preserve-3d;
+}
+.circle-rotate .word {
+  transform-style: preserve-3d;
+}
+.circle-rotate span {
+  /* background-color: goldenrod; */
+  position: absolute;
+  transform: rotateY(calc(var(--char-index) * 30deg)) translateZ(1000px);
+}

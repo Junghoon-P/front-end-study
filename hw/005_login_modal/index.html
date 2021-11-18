@@ -12,18 +12,22 @@
     <form action="submit" id="app">
       <fieldset class="title-wrapper">
         <h1 class="title">로그인 또는 회원가입</h1>
+        <!-- x버튼을 누르기 위해 가상선택자 보다는 직접 버튼이나 엥커 테그로 -->
       </fieldset>
       <fieldset class="content-input">
         <legend class="text-comment">
           훈이버에서 여러분의 궁금증을 해결하세요! :)
         </legend>
+        <!-- 라벨 택스트안에 인풋 설명을 적고 sr-only -->
         <label class="sr-only" for="id-input">아이디 적는 칸</label>
         <input type="text" placeholder="아이디" id="id-input" required />
+        <!-- 아이디를 입력해주세요 is-visble 이거 할때 strong 태그로 보이게? -->
         <label class="sr-only" for="pw-input">비밀번호 적는 칸</label>
         <input type="password" placeholder="비밀번호" id="pw-input" required />
         <div class="login-status">
           <img src="./images/check-box.png" alt="login-status-check-box" />
           <span>로그인 상태 유지</span>
+          <!-- 인풋 체크박스 스타일 주기 -->
         </div>
         <div class="login-action">
           <button class="login-btn">로그인</button>
@@ -34,8 +38,12 @@
         </div>
       </fieldset>
       <fieldset class="social-login">
+        <!-- h2 고민 -->
+        <!-- 또는이 만약에 의미가 없다면 전체를 가상 선택자로 하는 것도 ㄱㅊ -->
+
         <h2 class="borderline">또는</h2>
         <fieldset class="social-login-btn">
+          <!-- 모듈화를 고려하면서 만들기 / 버튼을 어디다가 놔도 그 형태를 유지하도록 -->
           <button class="google-login-btn">구글 계정으로 로그인</button>
           <button class="facebook-login-btn">페이스북 계정으로 로그인</button>
           <button class="naver-login-btn">네이버 계정으로 로그인</button>
