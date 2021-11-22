@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+    <link rel="stylesheet" href="../reset.css" />
+    <style>
+      /* div {
+        position: relative;
+        width: 500px;
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        clip: rect(0 504px 700px 0);
+      } */
+      /* 반드시 포지션이 있어야 적용이 된다. */
+      /* 버튼 디자인할때도 유용할 것 같다. */
+      .blind  {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+      }
+
+      p {
+        background-color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div>
+      <img
+        src="https://mblogthumb-phinf.pstatic.net/20150514_30/celinicious_1431560263613dpyHh_JPEG/%B8%B6%C5%A9%B7%CE%BD%BA%C4%DA-MarkRothko-Seoul-11.jpg?type=w2"
+        alt=""
+      />
+    </div> -->
+    <p class="blind">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+      magnam a dolorem eum vitae sint ad, alias soluta ea atque sequi at cum
+      quidem doloribus expedita perferendis impedit amet distinctio!
+    </p>
+  </body>
+</html>

@@ -73,7 +73,10 @@
   width: 22px;
   height: 22px;
   margin-left: 16px;
-  background-image: url("../images-login/icon_google.png");
+  background-image: url("../images-login/css_sprites_retina.png");
+  /* 2배 이전의 사이즈로 맞춰주고 레티나 대응 */
+  background-size: 117px 84px;
+  background-position: -52px -10px;
 }
 
 .link-sns-login.icon-naver {
@@ -81,7 +84,7 @@
 }
 
 .link-sns-login.icon-naver::before {
-  background-image: url("../images-login/icon_naver.png");
+  background-position: -10px -10px;
 }
 .link-sns-login.icon-facebook {
   border-color: #2d9cdb;
@@ -91,12 +94,13 @@
   /* background-image:url("../images-login/icon_facebook.png");
   background-repeat:no-repeat;
   background-position: center; */
-  background: url("../images-login/icon_facebook.png") center no-repeat;
+  height: 24px;
+  background-position: -90px -10px;
 }
 .link-sns-login.icon-kakao {
   border-color: #f2c94c;
 }
 
 .link-sns-login.icon-kakao::before {
-  background-image: url("../images-login/icon_kakao.png");
+  background-position: -10px -52px;
 }

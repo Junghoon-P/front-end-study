@@ -1,0 +1,81 @@
+body {
+  width: 100vw;
+  height: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h2 {
+  display: none;
+}
+
+.btn-select {
+  width: 200px;
+  height: 40px;
+  left: 120px;
+  top: 71px;
+  font-size: 14px;
+  line-height: 16px;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.list-member {
+  /* display: none; */
+  margin-top: 9px;
+  /* width: 200px; */
+  left: 350px;
+  top: 120px;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  padding: 10px 8px;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.list-member.on {
+  display: block;
+}
+
+.btn-select:active {
+  background: #ffffff;
+  /* Purple 1 */
+
+  border: 1px solid #9b51e0;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.btn-select:active + .list-member {
+  display: block;
+}
+
+.list-member li {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  width: 200px;
+}
+
+.list-member li button {
+  text-align: left;
+  display: block;
+  width: 184px;
+  height: 30px;
+  border: none;
+  border-radius: 8px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  background: none;
+}
+
+.list-member li button:hover {
+  background: #e4fdff;
+}

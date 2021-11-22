@@ -382,6 +382,7 @@
   .tit-low::after {
     width: 106px;
     height: 106px;
+    /* 사이즈가 줄었을때 깨질 수 있기 때무에 백그라운드 사이즈를 지정해준다. */
     background-size: 106px;
   }
 
