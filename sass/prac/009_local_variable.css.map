@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EAEJ,SAAS,EAAE,IAAI;EACf,WAAW,EAFG,IAAI;EAGlB,UAAU,EAAE,KAAK;CAIlB;;AARD,AAKE,KALG,CAKH,IAAI,CAAC;EACH,WAAW,EALC,IAAI;CAMjB",
+    "sources": [
+        "009_local_variable.scss"
+    ],
+    "names": [],
+    "file": "009_local_variable.css"
+}

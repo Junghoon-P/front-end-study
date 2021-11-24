@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAWA,AAAA,GAAG,CAAC;EACF,WAAW,EATH,GAAG;CAUZ;;AAED,AACE,OADK,CACL,EAAE,CAAC;EACD,SAAS,EAVL,IAAI;CAWT",
+    "sources": [
+        "008_map.scss"
+    ],
+    "names": [],
+    "file": "008_map.css"
+}

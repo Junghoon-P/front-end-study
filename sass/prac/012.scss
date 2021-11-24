@@ -1,0 +1,10 @@
+// Scss
+.status-bar {
+  font-family: "Noto Sans KR", sans- + serif;
+}
+
+td {
+  &::after {
+    content: "Heades" + " up!"; // 문자열 더하기
+  }
+}
