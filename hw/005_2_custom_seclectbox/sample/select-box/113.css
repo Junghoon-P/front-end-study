@@ -1,0 +1,70 @@
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+h2 {
+  margin: 30px;
+  font-weight: 700;
+}
+
+.btn-select {
+  padding-left: 14px;
+  box-sizing: border-box;
+  width: 200px;
+  height: 40px;
+  background: none;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  text-align: left;
+  background: url("img/Polygon_dw.png") calc(100% - 13px) calc(100% - 16px) /
+    10px 6px no-repeat;
+}
+
+.btn-select:focus {
+  border: 1px solid #9b51e0;
+  outline: 3px solid #f8e4ff;
+  background-image: url("img/Polygon_uw.png");
+}
+
+.list-member {
+  box-sizing: border-box;
+  margin: 9px auto;
+  display: none;
+  width: 200px;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  box-shadow: 4px 4px 14px 0 rgba(0, 0, 0, 0.15);
+}
+
+.list-member.on {
+  display: block;
+}
+
+.btn-select:active + .list-member {
+  display: block;
+}
+
+.list-member li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 200px;
+}
+
+.list-member li button {
+  padding: 7px 0 7px 10px;
+  display: block;
+  height: 30px;
+  width: 184px;
+  text-align: left;
+  font-size: 14px;
+  border: none;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.list-member li button:hover,
+.list-member li button:focus {
+  background-color: #f8e4ff;
+}

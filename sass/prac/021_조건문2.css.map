@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAmBA,AAAA,OAAO,CAAC;EARJ,gBAAgB,EARD,OAAO;EAStB,KAAK,EARI,IAAI;CAoBhB;;AAHC,AAAA,IAAI,AAAA,KAAK,CAFX,OAAO,CAEO;EAPV,gBAAgB,EARF,OAAO;EASrB,KAAK,EARG,OAAO;CAgBhB",
+    "sources": [
+        "021_조건문2.scss"
+    ],
+    "names": [],
+    "file": "021_조건문2.css"
+}
