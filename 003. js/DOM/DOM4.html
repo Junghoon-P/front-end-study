@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>색깔 바꾸기</title>
+  <link rel="stylesheet" href="../../reset.css">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      text-align: center;
+    }
+
+    article {
+      width: 500px;
+      height: 500px;
+      line-height: 500px;
+      font-size: 50px;
+      color: white;
+      border: 1px solid gainsboro;
+      border-radius: 5px;
+    }
+
+    section ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .red {
+      background-color: rgb(218, 102, 102);
+    }
+
+    .yellow {
+      background-color: rgb(250, 237, 134);
+    }
+
+    .green {
+      background-color: rgb(168, 244, 130);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section>
+      <article>신호등</article>
+      <ul>
+        <li><button type="button" class="red">빨간불</button></li>
+        <li><button type="button" class="yellow">노란불</button></li>
+        <li><button type="button" class="green">초록불</button></li>
+      </ul>
+    </section>
+  </main>
+  <script>
+    const btn = document.querySelectorAll('button');
+    const box = document.querySelector('article')
+
+    btn.forEach(el => {
+      el.addEventListener('click', () => {
+
+        // blue 라는 클래스의 속성 값을 지정 할 수 있습니다.
+        if (el.classList.contains('green')) {
+          box.classList.add('green');
+          box.classList = 'green'
+        }
+        else if (el.classList.contains('yellow')) {
+          box.classList.add('yellow');
+          box.classList = 'yellow'
+          // box.classList.remove('green', 'red');
+        }
+        else if (el.classList.contains('red')) {
+          box.classList.add('red');
+          box.classList = 'red'
+          // box.classList.remove('yellow', 'green');
+        }
+      })
+    })
+
+    // red.addEventListener('click', () => {
+    //   sign.classList.add('red')
+    //   sign.classList.remove('base')
+    //   sign.classList.remove('yellow', 'green')
+    // })
+
+    // yellow.addEventListener('click', () => {
+    //   sign.classList.add('yellow')
+    //   sign.classList.remove('base')
+    //   sign.classList.remove('red', 'green')
+    // })
+
+    // green.addEventListener('click', () => {
+    //   sign.classList.add('green')
+    //   sign.classList.remove('base')
+    //   sign.classList.remove('red', 'yellow')
+    // })
+  </script>
+</body>
+
+</html>
