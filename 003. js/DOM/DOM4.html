@@ -51,19 +51,18 @@
 <body>
   <main>
     <section>
-      <article>신호등</article>
+      <article class="red">신호등</article>
       <ul>
-        <li><button type="button" class="red">빨간불</button></li>
         <li><button type="button" class="yellow">노란불</button></li>
         <li><button type="button" class="green">초록불</button></li>
       </ul>
     </section>
   </main>
   <script>
-    const btn = document.querySelectorAll('button');
-    const box = document.querySelector('article')
+    const btnList = document.querySelectorAll('button');
+    // const box = document.querySelector('article')
 
-    btn.forEach(el => {
+    btnList.forEach(el => {
       el.addEventListener('click', () => {
 
         // blue 라는 클래스의 속성 값을 지정 할 수 있습니다.
@@ -79,7 +78,7 @@
         else if (el.classList.contains('red')) {
           box.classList.add('red');
           box.classList = 'red'
-          // box.classList.remove('yellow', 'green');
+          // box.classList.remove('y1ellow', 'green');
         }
       })
     })
