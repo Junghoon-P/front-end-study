@@ -53,6 +53,7 @@
     <section>
       <article class="red">신호등</article>
       <ul>
+        <li><button type="button" class="red">빨간불</button></li>
         <li><button type="button" class="yellow">노란불</button></li>
         <li><button type="button" class="green">초록불</button></li>
       </ul>
@@ -60,7 +61,10 @@
   </main>
   <script>
     const btnList = document.querySelectorAll('button');
-    // const box = document.querySelector('article')
+    const box = document.querySelector('article')
+    console.log(`안녕`, btnList)
+    const red = btnList[0];
+    console.log(red)
 
     btnList.forEach(el => {
       el.addEventListener('click', () => {
