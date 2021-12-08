@@ -1,1 +1,1 @@
-document.getElementById('helloworld').innerHTML = 'hello world';
+console.log(`hello`, hello);
